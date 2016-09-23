@@ -1,4 +1,9 @@
 class ItemsController < InheritedResources::Base
-  # belongs_to :category, :finder => :find_by_name!, :param => :name
   respond_to :json
+
+  def index
+    category_id = Category.find(params[:category_id]).id
+    @items = Item.where(category_id: category_id)
+    index!
+  end
 end
