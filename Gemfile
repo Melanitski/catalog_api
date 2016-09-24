@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'rack-cors'
 gem 'friendly_id', '~> 5.1.0'
 gem 'inherited_resources'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
